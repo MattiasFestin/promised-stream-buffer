@@ -1,0 +1,25 @@
+{
+  "name": "promised-stream-buffer.js",
+  "version": "1.0.0",
+  "description": "Buffer a readable node.js stream. And resolve promise on 'end' event.",
+  "main": "src/index",
+  "scripts": {
+    "test": "gulp test",
+    "postinstall": "npm install -g nodemon",
+    "test-watch": "nodemon -e spec.js -w test/specs/ -w src/ -x \"gulp test\""
+  },
+  "author": "Mattias Festin",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-mocha": "^2.2.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-util": "^3.0.7",
+    "mocha": "^2.3.3",
+    "should": "^7.1.1",
+    "should-promised": "^0.3.1",
+    "stream-array": "^1.1.1"
+  },
+  "dependencies": {}
+}
