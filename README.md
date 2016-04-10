@@ -1,21 +1,23 @@
-testdata.txt
-----
-```
-	abc
-	123
-```
+Usage
+===
 
 example.js
 ----
 ```
-	var fs = require('fs'),
-		promised_stream_buffer = require('promised-stream-buffer');
+var fs = require('fs'),
+	promised_stream_buffer = require('promised-stream-buffer');
 
-	promised_stream_buffer(fs.createReadStream('./testdata.txt'))
-		.then(x => console.log(x))		// "abc\n123"
-		.catch(e => console.error(e));
+promised_stream_buffer(fs.createReadStream('./testdata.txt'))
+	.then(x => console.log(x))		// "abc\n123"
+	.catch(e => console.error(e));
 ```
 
+testdata.txt
+----
+```
+abc
+123
+```
 
 LICENCE
 ===
