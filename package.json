@@ -2,10 +2,9 @@
   "name": "promised-stream-buffer.js",
   "version": "1.0.0",
   "description": "Buffer a readable node.js stream. And resolve promise on 'end' event.",
-  "main": "src/index",
+  "main": "src/buffer.js",
   "scripts": {
     "test": "gulp test",
-    "postinstall": "npm install -g nodemon",
     "test-watch": "nodemon -e spec.js -w test/specs/ -w src/ -x \"gulp test\""
   },
   "author": "Mattias Festin",
